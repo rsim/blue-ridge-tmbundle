@@ -5,21 +5,22 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>#!/usr/bin/env ruby
+	<string>RAILS_DIR=`dirname "$TM_FILEPATH" | sed -e "s|test/javascript.*$||"`
+SPEC_NAME=`basename -s "_spec.js" "$TM_FILEPATH"`
 
-path = ENV['TM_FILEPATH']
-url  = "http://localhost:8080/specs#{path.sub(/.*\/spec\/javascripts(.*)\.js$/, '\1')}"
+cd $RAILS_DIR
 
-`open #{url}`
-</string>
+echo "&lt;pre&gt;"
+rake test:javascripts TEST=$SPEC_NAME
+echo "&lt;/pre&gt;"</string>
 	<key>input</key>
 	<string>none</string>
 	<key>keyEquivalent</key>
 	<string>@r</string>
 	<key>name</key>
-	<string>Run Examples (with screw-unit-server)</string>
+	<string>Run Examples</string>
 	<key>output</key>
-	<string>showAsTooltip</string>
+	<string>showAsHTML</string>
 	<key>scope</key>
 	<string>source.js.screw-unit</string>
 	<key>uuid</key>
