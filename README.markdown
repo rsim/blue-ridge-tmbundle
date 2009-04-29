@@ -14,7 +14,7 @@ Screw.Unit is a behavior-driven testing framework for Javascript.
 # Bundle Installation
 
     cd ~/Library/Application\ Support/TextMate/Bundles/
-    git clone git://github.com/coreyti/screw-unit-tmbundle.git Screw_Unit.tmbundle
+    git clone git://github.com/karnowski/screw-unit-tmbundle.git Screw_Unit.tmbundle
 
 # Thanks
 
