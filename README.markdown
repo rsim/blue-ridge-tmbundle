@@ -14,7 +14,7 @@ Screw.Unit is a behavior-driven testing framework for Javascript.
 # Bundle Installation
 
     cd ~/Library/Application\ Support/TextMate/Bundles/
-    git clone git://github.com/karnowski/blue-ridge-tmbundle.git Blue-Ridge.tmbundle
+    git clone git://github.com/karnowski/blue-ridge-tmbundle.git JavaScript\ Blue\ Ridge.tmbundle
 
 # Thanks
 
