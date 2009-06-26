@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>Screw.Matchers['${1:matcher}'] = {
+  match: function(expected, actual) {
+    return ${2:actual.indexOf(expected) != -1};
+  },
+  failure_message: function(expected, actual, not) {
+    return 'expected ' + $.print(actual) + (not ? ' not' : '') + ${3:' to include ' + $.print(expected)};
+  }
+};
+
+</string>
+	<key>name</key>
+	<string>matcher</string>
+	<key>scope</key>
+	<string>source.js.screw-unit</string>
+	<key>tabTrigger</key>
+	<string>matcher</string>
+	<key>uuid</key>
+	<string>3967797E-9592-4E45-88B0-041954178119</string>
+</dict>
+</plist>
