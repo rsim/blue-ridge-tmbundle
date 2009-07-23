@@ -20,6 +20,12 @@
 			<key>include</key>
 			<string>source.js</string>
 		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(describe|it|after|before|expect|to)\b</string>
+			<key>name</key>
+			<string>support.function.js.spec</string>
+		</dict>
 	</array>
 	<key>scopeName</key>
 	<string>source.js.screw-unit</string>
