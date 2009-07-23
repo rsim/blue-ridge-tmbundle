@@ -8,7 +8,7 @@
     return ${2:actual.indexOf(expected) != -1};
   },
   failure_message: function(expected, actual, not) {
-    return 'expected ' + $.print(actual) + (not ? ' not' : '') + ${3:' to include ' + $.print(expected)};
+    return 'expected ' + \$.print(actual) + (not ? ' not' : '') + ${3:' to include ' + \$.print(expected)};
   }
 };
 
