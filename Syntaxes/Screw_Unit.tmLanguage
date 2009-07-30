@@ -22,7 +22,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(describe|it|after|before|expect|to)\b</string>
+			<string>\b(describe|it|after|before|expect|to|to_not)\b</string>
 			<key>name</key>
 			<string>support.function.js.spec</string>
 		</dict>
