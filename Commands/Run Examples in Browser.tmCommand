@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby
+
+path = ENV['TM_FILEPATH']
+url = "file://#{File.dirname(path).gsub(/(javascripts?)(\/|$)/,"\\1/fixtures\\2")}/" &lt;&lt; 
+      "#{File.basename(path).sub(/_spec\.js$/,'')}.html"
+
+`open #{url}`</string>
+	<key>input</key>
+	<string>none</string>
+	<key>keyEquivalent</key>
+	<string>~@r</string>
+	<key>name</key>
+	<string>Run Examples in Browser</string>
+	<key>output</key>
+	<string>showAsTooltip</string>
+	<key>scope</key>
+	<string>source.js.screw-unit</string>
+	<key>uuid</key>
+	<string>36D3B363-49E6-4073-9F23-6C82D464A50A</string>
+</dict>
+</plist>
